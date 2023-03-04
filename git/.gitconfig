@@ -1,0 +1,7 @@
+[user]
+	name = Eren Eroğlu
+	email = 108634315+ereneroglum@users.noreply.github.com
+[init]
+	defaultBranch = master
+[pull]
+	ff = only
