@@ -15,3 +15,9 @@ PS1='\[\e[1;32m\][\u@\h:\w]\$ \[\e[m\]'
 export EDITOR=nvim
 export VISUAL=nvim
 export MANPAGER='nvim +Man!'
+
+# Load custom bash scripts
+for i in "$HOME/.config/bash-scripts/"*
+do
+        . "$i"
+done
