@@ -16,3 +16,9 @@ for i in "$HOME/.config/bash-scripts/"*
 do
         . "$i"
 done
+
+# Add $HOME/.local/bin to path if it exists
+if [ -d "$HOME/.local/bin" ]
+then
+        export PATH="$HOME/.local/bin:$PATH"
+fi
