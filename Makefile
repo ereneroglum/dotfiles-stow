@@ -16,3 +16,6 @@ explicit-update:
 
 installed-update:
 	$(PACMAN) -Q > installed.txt
+
+foreign-update:
+	$(PACMAN) -Qm > foreign.txt
