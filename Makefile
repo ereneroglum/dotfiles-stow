@@ -15,4 +15,4 @@ explicit-update:
 	$(PACMAN) -Qe > explicit-installed.txt
 
 installed-update:
-	$(PACMAN) -Qe > installed.txt
+	$(PACMAN) -Q > installed.txt
