@@ -1,7 +1,7 @@
 STOW ?= stow
 PACMAN ?= pacman
 FOLDING ?= --no-folding
-PACKAGES ?= alacritty bash emacs git gpg mpv neovim rust ssh
+PACKAGES ?= alacritty bash emacs git gpg helix mpv neovim rust ssh
 
 all: install
 
