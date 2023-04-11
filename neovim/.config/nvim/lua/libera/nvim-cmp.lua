@@ -1,5 +1,36 @@
 local M = {}
 
+M.kind_icons = {
+  Text = "",
+  Method = "",
+  Function = "",
+  Constructor = "",
+  Field = "ﰠ",
+  Variable = "",
+  Class = "ﴯ",
+  Interface = "",
+  Module = "",
+  Property = "ﰠ",
+  Unit = "塞",
+  Value = "",
+  Enum = "",
+  Keyword = "",
+  Snippet = "",
+  Color = "",
+  File = "",
+  Reference = "",
+  Folder = "",
+  EnumMember = "",
+  Constant = "",
+  Struct = "",
+  Event = "",
+  Operator = "",
+  TypeParameter = "",
+  String = "󰅳",
+  Comment = "",
+  Conditional = ""
+}
+
 M.plugin_spec = {
   "hrsh7th/nvim-cmp",
   config = function()
@@ -16,11 +47,20 @@ M.plugin_spec = {
       formatting = {
         fields = { "kind", "abbr", "menu" },
         format = function(entry, vim_item)
-          local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50 })(entry, vim_item)
-          local strings = vim.split(kind.kind, "%s", { trimempty = true })
-          kind.kind = " " .. strings[1] .. " "
-          kind.menu = "    (" .. strings[2] .. ")"
-          return kind
+          if vim_item.kind == "Error" then
+            vim_item.kind = ""
+            return vim_item
+          end
+          local source_name = ({
+            buffer = "[Buffer]",
+            nvim_lsp = "[LSP]",
+            luasnip = "[LuaSnip]",
+            nvim_lua = "[Lua]",
+            treesitter = "[Treesitter]"
+          })[entry.source.name]
+          vim_item.menu = "    (" .. (vim_item.kind or "") .. ")" .. " " .. source_name
+          vim_item.kind = M.kind_icons[vim_item.kind]
+          return vim_item
         end
       },
       mapping = cmp.mapping.preset.insert({
@@ -51,7 +91,6 @@ M.plugin_spec = {
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-path",
-    "onsails/lspkind.nvim",
     "ray-x/cmp-treesitter",
     "saadparwaiz1/cmp_luasnip"
   },
