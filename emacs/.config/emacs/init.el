@@ -26,7 +26,7 @@
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (xterm-mouse-mode 1)
-(set-frame-font "JetBrainsMono Nerd Font Mono 10")
+(set-frame-font "JetBrainsMono Nerd Font Mono 12")
 (load-theme 'vscode-dark-plus t)
 
 ;; Show number of matching phrases
