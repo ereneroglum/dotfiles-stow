@@ -46,9 +46,9 @@
       use-file-dialog nil)
 
 ;; UI
-(push '(menu-bar-lines . 0) default-frame-alist)
-(push '(tool-bar-lines . 0) default-frame-alist)
-(push '(vertical-scroll-bars) default-frame-alist)
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
 (push '(font . "JetBrainsMono Nerd Font Mono 12") default-frame-alist)
 
 ;;; early-init.el ends here
