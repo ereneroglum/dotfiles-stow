@@ -1,6 +1,12 @@
 local M = {}
 
 function M.setup()
+  -- Skip checking for loaded providers
+  vim.g.loaded_python3_provider = 0
+  vim.g.loaded_ruby_provider = 0
+  vim.g.loaded_node_provider = 0
+  vim.g.loaded_perl_provider = 0
+
   -- Show line numbers
   vim.opt.number = true
 
