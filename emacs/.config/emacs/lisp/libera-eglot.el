@@ -1,4 +1,4 @@
-;;; init.el --- Libera Emacs init file  -*- lexical-binding: t; -*-
+;;; libera-eglot.el --- Libera Emacs eglot configuration file   -*- lexical-binding: t; -*-
 
 ;; Copyright (c) 2022-2023  Eren Eroğlu <108634315+ereneroglum@users.noreply.github.com>
 ;; URL: https://github.com/ereneroglum
@@ -21,30 +21,13 @@
 
 ;;; Code:
 
-;; Add custom load path to load *.el files
-(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+;; Set modes where eglot should start automatically
+(use-package eglot
+  :ensure t
+  :hook
+  (c++-mode-hook . eglot-ensure)
+  (c-mode-hook . eglot-ensure))
 
-;; UI
-(global-display-line-numbers-mode 1)
-(load-theme 'modus-vivendi)
+(provide 'libera-eglot)
 
-;; Show number of matching phrases
-(setq isearch-lazy-count t)
-
-;; Trailing Whitespace Clear Before Save
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
-
-;; Window Navigation
-(windmove-default-keybindings)
-
-;; Auto Close Brackets
-(electric-pair-mode 1)
-
-;; Switch to completions buffer
-(setq completion-auto-select t)
-
-(require 'libera-package)
-(require 'libera-company)
-(require 'libera-eglot)
-
-;;; init.el ends here
+;;; libera-eglot.el ends here
