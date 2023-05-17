@@ -39,7 +39,7 @@
 
 ;; Select which packages to be installed
 ;; Configuration for all packages will be given in respective files
-(setq package-selected-packages '(company))
+(setq package-selected-packages '(company web-mode))
 
 (when (cl-find-if-not #'package-installed-p package-selected-packages)
   (package-refresh-contents)
