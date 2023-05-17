@@ -25,8 +25,8 @@
 (use-package eglot
   :ensure t
   :hook
-  (c++-mode-hook . eglot-ensure)
-  (c-mode-hook . eglot-ensure))
+  (c++-mode . eglot-ensure)
+  (c-mode . eglot-ensure))
 
 (provide 'libera-eglot)
 
