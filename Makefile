@@ -4,6 +4,7 @@ FOLDING ?= --no-folding
 PACKAGES ?= alacritty \
 	bash \
 	emacs \
+	flutter \
 	git \
 	gpg \
 	mpv \
