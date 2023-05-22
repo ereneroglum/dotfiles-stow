@@ -1,4 +1,4 @@
-;;; init.el --- Libera Emacs init file  -*- lexical-binding: t; -*-
+;;; libera-company.el --- Libera Emacs company-mode configuration file  -*- lexical-binding: t; -*-
 
 ;; Copyright (c) 2022-2023  Eren Eroğlu <108634315+ereneroglum@users.noreply.github.com>
 ;; URL: https://github.com/ereneroglum
@@ -21,30 +21,17 @@
 
 ;;; Code:
 
-;; Add custom load path to load *.el files
-(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+;; Use company for completions
+(use-package company
+  :ensure t
+  :config
+  ;; Set sane defaults for company mode
+  (setq company-idle-delay 0.0
+	company-minimum-prefix-length 1)
+  :init
+  ;; We want to enable company globally
+  (global-company-mode 1))
 
-;; UI
-(global-display-line-numbers-mode 1)
-(load-theme 'modus-vivendi)
+(provide 'libera-company)
 
-;; Show number of matching phrases
-(setq isearch-lazy-count t)
-
-;; Trailing Whitespace Clear Before Save
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
-
-;; Window Navigation
-(windmove-default-keybindings)
-
-;; Auto Close Brackets
-(electric-pair-mode 1)
-
-;; Switch to completions buffer
-(setq completion-auto-select t)
-
-(require 'libera-package)
-(require 'libera-company)
-(require 'libera-eglot)
-
-;;; init.el ends here
+;;; libera-company.el ends here
