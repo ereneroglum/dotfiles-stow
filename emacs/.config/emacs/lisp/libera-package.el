@@ -42,7 +42,13 @@
 ;; Select which packages to be installed
 ;; Configuration for all packages will be given in respective files
 (setq package-selected-packages
-      '(company flycheck rust-mode go-mode web-mode vscode-dark-plus-theme))
+      '(company
+	; flycheck
+	treesit-auto
+	; rust-mode
+	; go-mode
+	; web-mode
+	vscode-dark-plus-theme))
 
 (when (cl-find-if-not #'package-installed-p package-selected-packages)
   (package-refresh-contents)

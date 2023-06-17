@@ -47,10 +47,11 @@
 (require 'libera-package)
 (require 'libera-company)
 (require 'libera-eglot)
-(require 'libera-flycheck)
-(require 'libera-rust-mode)
-(require 'libera-go-mode)
-(require 'libera-web-mode)
+; (require 'libera-flycheck)
+(require 'libera-treesitter)
+; (require 'libera-rust-mode)
+; (require 'libera-go-mode)
+; (require 'libera-web-mode)
 (require 'libera-theme)
 
 ;;; init.el ends here

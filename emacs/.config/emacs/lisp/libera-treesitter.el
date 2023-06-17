@@ -1,4 +1,4 @@
-;;; libera-eglot.el --- Libera Emacs eglot configuration file   -*- lexical-binding: t; -*-
+;;; libera-treesitter.el --- Libera Emacs treesitter configuration file  -*- lexical-binding: t; -*-
 
 ;; Copyright (c) 2022-2023  Eren Eroğlu <108634315+ereneroglum@users.noreply.github.com>
 ;; URL: https://github.com/ereneroglum
@@ -23,12 +23,13 @@
 
 ;;; Code:
 
-;; Set modes where eglot should start automatically
-(use-package eglot
+;; Use treesitter for syntax highlighting
+(use-package treesit-auto
   :ensure t
-  :hook
-  (prog-mode . eglot-ensure))
+  :config
+  (setq treesit-auto-install 'prompt)
+  (global-treesit-auto-mode 1))
 
-(provide 'libera-eglot)
+(provide 'libera-treesitter)
 
-;;; libera-eglot.el ends here
+;;; libera-treesitter.el ends here
