@@ -1,4 +1,4 @@
-;;; libera-rust-mode.el --- Libera Emacs rust-mode configuration file   -*- lexical-binding: t; -*-
+;;; libera-theme.el --- Libera Emacs theme configuration file   -*- lexical-binding: t; -*-
 
 ;; Copyright (c) 2022-2023  Eren Eroğlu <108634315+ereneroglum@users.noreply.github.com>
 ;; URL: https://github.com/ereneroglum
@@ -23,10 +23,12 @@
 
 ;;; Code:
 
-;; Setup rust-mode
-(use-package rust-mode
-  :ensure t)
+;; Set current theme to dark plus theme of vscode
+(use-package vscode-dark-plus-theme
+  :ensure t
+  :init
+  (load-theme 'vscode-dark-plus t))
 
-(provide 'libera-rust-mode)
+(provide 'libera-theme)
 
-;;; libera-rust-mode.el ends here
+;;; libera-theme.el ends here

@@ -19,6 +19,8 @@
 ;; You should have received a copy of the GNU Affero General Public License
 ;; along with this file.  If not, see <https://www.gnu.org/licenses/>.
 
+;;; Commentary:
+
 ;;; Code:
 
 ;; Add custom load path to load *.el files
@@ -26,7 +28,6 @@
 
 ;; UI
 (global-display-line-numbers-mode 1)
-(load-theme 'modus-vivendi)
 
 ;; Show number of matching phrases
 (setq isearch-lazy-count t)
@@ -50,5 +51,6 @@
 (require 'libera-rust-mode)
 (require 'libera-go-mode)
 (require 'libera-web-mode)
+(require 'libera-theme)
 
 ;;; init.el ends here
