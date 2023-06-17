@@ -26,7 +26,9 @@
   :ensure t
   :hook
   (c++-mode . eglot-ensure)
-  (c-mode . eglot-ensure))
+  (c-mode . eglot-ensure)
+  (rust-mode . eglot-ensure)
+  (go-mode . eglot-ensure))
 
 (provide 'libera-eglot)
 

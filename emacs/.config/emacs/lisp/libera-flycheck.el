@@ -1,4 +1,4 @@
-;;; init.el --- Libera Emacs init file  -*- lexical-binding: t; -*-
+;;; libera-flycheck.el --- Libera Emacs flycheck configuration file  -*- lexical-binding: t; -*-
 
 ;; Copyright (c) 2022-2023  Eren Eroğlu <108634315+ereneroglum@users.noreply.github.com>
 ;; URL: https://github.com/ereneroglum
@@ -21,34 +21,13 @@
 
 ;;; Code:
 
-;; Add custom load path to load *.el files
-(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+;; Use flycheck for code linting
+(use-package flycheck
+  :ensure t
+  :init
+  ;; We want to enable flycheck globally
+  (global-flycheck-mode 1))
 
-;; UI
-(global-display-line-numbers-mode 1)
-(load-theme 'modus-vivendi)
+(provide 'libera-flycheck)
 
-;; Show number of matching phrases
-(setq isearch-lazy-count t)
-
-;; Trailing Whitespace Clear Before Save
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
-
-;; Window Navigation
-(windmove-default-keybindings)
-
-;; Auto Close Brackets
-(electric-pair-mode 1)
-
-;; Switch to completions buffer
-(setq completion-auto-select t)
-
-(require 'libera-package)
-(require 'libera-company)
-(require 'libera-eglot)
-(require 'libera-flycheck)
-(require 'libera-rust-mode)
-(require 'libera-go-mode)
-(require 'libera-web-mode)
-
-;;; init.el ends here
+;;; libera-flycheck.el ends here
