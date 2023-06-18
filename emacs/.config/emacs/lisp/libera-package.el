@@ -45,6 +45,7 @@
       '(company
 	; flycheck
 	treesit-auto
+	markdown-mode
 	; rust-mode
 	; go-mode
 	; web-mode
