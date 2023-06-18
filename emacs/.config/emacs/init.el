@@ -44,7 +44,8 @@
 ;; Switch to completions buffer (use if helm is not present)
 ; (setq completion-auto-select t)
 
-(require 'libera-package)
+; (require 'libera-package)
+(require 'libera-elpaca)
 (require 'libera-company)
 (require 'libera-helm)
 (require 'libera-eglot)
