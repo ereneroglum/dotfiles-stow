@@ -41,11 +41,12 @@
 ;; Auto Close Brackets
 (electric-pair-mode 1)
 
-;; Switch to completions buffer
-(setq completion-auto-select t)
+;; Switch to completions buffer (use if helm is not present)
+; (setq completion-auto-select t)
 
 (require 'libera-package)
 (require 'libera-company)
+(require 'libera-helm)
 (require 'libera-eglot)
 ; (require 'libera-flycheck)
 (require 'libera-treesitter)

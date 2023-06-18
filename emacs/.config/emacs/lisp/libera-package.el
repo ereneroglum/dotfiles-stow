@@ -43,6 +43,7 @@
 ;; Configuration for all packages will be given in respective files
 (setq package-selected-packages
       '(company
+	helm
 	; flycheck
 	treesit-auto
 	markdown-mode
