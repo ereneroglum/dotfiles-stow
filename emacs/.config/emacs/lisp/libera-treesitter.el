@@ -30,6 +30,9 @@
   (setq treesit-auto-install 'prompt)
   (global-treesit-auto-mode 1))
 
+(add-to-list 'auto-mode-alist
+	     '("\\.tsx\\'" . tsx-ts-mode))
+
 (provide 'libera-treesitter)
 
 ;;; libera-treesitter.el ends here
