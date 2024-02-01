@@ -24,10 +24,16 @@
 ;;; Code:
 
 ;; Set modes where eglot should start automatically
-(use-package eglot
-  :ensure t
-  :hook
-  (prog-mode . eglot-ensure))
+
+;; Prefer latest
+;; (use-package eglot
+;;   :ensure t
+;;   :hook
+;;   (prog-mode . eglot-ensure))
+
+;; Prefer bundeled version
+(require 'eglot)
+(add-hook 'prog-mode-hook 'eglot-ensure)
 
 (provide 'libera-eglot)
 
