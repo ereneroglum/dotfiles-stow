@@ -1,0 +1,11 @@
+import = ["/home/eren/.config/alacritty/colors.toml"]
+
+[font]
+size = 12
+
+[font.normal]
+family = "JetBrains Mono Nerd Font Mono"
+
+[window]
+dynamic_padding = true
+opacity = 0.95
