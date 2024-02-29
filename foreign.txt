@@ -1,7 +1,4 @@
-eclipse-platform 4.27-1
-emacs29-git 29.0.90.165046-1
+jellyfin-media-player 1.9.1-2
 jetbrains-toolbox 1.28.1.15219-1
-matlab 9.13.0.2193358-1
 prismlauncher-qt5-bin 6.3-1
-qownnotes 23.5.3-1
-texlive-full 1:2023.20230327-1
+texlive-full 1:2023.20230703-1

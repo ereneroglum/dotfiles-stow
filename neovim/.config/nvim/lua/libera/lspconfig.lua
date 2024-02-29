@@ -15,7 +15,11 @@ M.plugin_spec = {
     end
 
     -- Setup Language Servers
-    local lspservers = { "clangd", "gopls", "pylsp", "rust_analyzer" }
+    local lspservers = {
+      "clangd",
+      "gopls",
+      "rust_analyzer"
+    }
     for _,i in ipairs(lspservers) do
       lspconfig[i].setup({ capabilities = capabilities })
     end

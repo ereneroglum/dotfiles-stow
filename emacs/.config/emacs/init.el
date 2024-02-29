@@ -44,16 +44,18 @@
 ;; Switch to completions buffer (use if helm is not present)
 ; (setq completion-auto-select t)
 
+;; Only one of the following package managers should be enabled
 ; (require 'libera-package)
 (require 'libera-elpaca)
+
 (require 'libera-company)
 (require 'libera-helm)
 (require 'libera-eglot)
 ; (require 'libera-flycheck)
 (require 'libera-treesitter)
 (require 'libera-markdown)
-; (require 'libera-rust-mode)
-; (require 'libera-go-mode)
+(require 'libera-rust-mode)
+(require 'libera-go-mode)
 ; (require 'libera-web-mode)
 (require 'libera-theme)
 
