@@ -1,4 +1,4 @@
 jellyfin-media-player 1.9.1-2
-jetbrains-toolbox 1.28.1.15219-1
-prismlauncher-qt5-bin 6.3-1
+prismlauncher 8.2-1
 texlive-full 1:2023.20230703-1
+yuzu 1706-1
