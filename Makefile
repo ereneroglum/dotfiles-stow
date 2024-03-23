@@ -7,6 +7,7 @@ PACKAGES ?= alacritty \
 	git \
 	gpg \
 	mpv \
+	npm \
 	ssh
 	# rust
 	# flutter
