@@ -7,11 +7,11 @@ PACKAGES ?= alacritty \
 	git \
 	gpg \
 	mpv \
+	neovim \
 	npm \
 	ssh
 	# rust
 	# flutter
-	# neovim
 	# helix
 
 all: install

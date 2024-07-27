@@ -21,8 +21,8 @@ function M.load_plugins(specs)
 end
 
 function M.setup(specs)
-	M.boostrap()
-	M.load_plugins(specs)
+  M.boostrap()
+  M.load_plugins(specs)
 end
 
 return M

@@ -1,9 +1,9 @@
 local M = {}
 
 M.plugin_spec = {
-  "folke/which-key.nvim",
+  "lukas-reineke/indent-blankline.nvim",
   config = function()
-    require("which-key").setup()
+    require("ibl").setup()
   end
 }
 

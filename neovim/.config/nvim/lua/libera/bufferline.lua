@@ -7,8 +7,7 @@ M.plugin_spec = {
   end,
   dependencies = {
     "nvim-tree/nvim-web-devicons"
-  },
-  event = "BufEnter"
+  }
 }
 
 return M

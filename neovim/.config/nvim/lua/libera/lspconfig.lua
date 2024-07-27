@@ -18,13 +18,13 @@ M.plugin_spec = {
     local lspservers = {
       "clangd",
       "gopls",
+      "pyright",
       "rust_analyzer"
     }
     for _,i in ipairs(lspservers) do
       lspconfig[i].setup({ capabilities = capabilities })
     end
-  end,
-  event = { "BufReadPost", "BufNewFile" }
+  end
 }
 
 return M

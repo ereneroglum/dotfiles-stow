@@ -94,7 +94,6 @@ M.plugin_spec = {
     "ray-x/cmp-treesitter",
     "saadparwaiz1/cmp_luasnip"
   },
-  event = "InsertEnter"
 }
 
 return M

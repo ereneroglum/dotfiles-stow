@@ -14,8 +14,7 @@ M.plugin_spec = {
     --- Tree sitter folding
     vim.opt.foldmethod = "expr"
     vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-  end,
-  event = { "BufReadPost", "BufNewFile" }
+  end
 }
 
 return M

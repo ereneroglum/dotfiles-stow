@@ -9,8 +9,7 @@ M.plugin_spec = {
         delay = 500
       }
     })
-  end,
-  event = { "BufReadPost", "BufNewFile" }
+  end
 }
 
 return M

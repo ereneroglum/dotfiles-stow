@@ -11,8 +11,7 @@ M.plugin_spec = {
     npairs.setup({
       check_ts = is_treesitter_present
     })
-  end,
-  event = "InsertEnter"
+  end
 }
 
 return M

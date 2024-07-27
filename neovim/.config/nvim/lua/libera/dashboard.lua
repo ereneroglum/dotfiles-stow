@@ -23,8 +23,7 @@ M.plugin_spec = {
       dashboard.button("q", " " .. " Quit", "<cmd>qa<cr>")
     }
     require("alpha").setup(dashboard.opts)
-  end,
-  event = "VimEnter"
+  end
 }
 
 return M
