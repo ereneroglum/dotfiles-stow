@@ -65,8 +65,8 @@ Note that when installing emacs package, it will set your `VISUAL` and `EDITOR` 
 
 If you do not want that behaviour you can comment respective lines in `.config/bash-scripts/emacs.sh`.
 
-You can comment and uncomment `(require 'libera-*)` lines to configure emacs.
+Tree-sitter grammers and language servers should be installed manually.
 
 ## About Neovim
 
-You can configure neovim by commenting and uncommenting lines in `.config/nvim/init.lua`.
+Tree-sitter grammers and language servers should be installed manually.
