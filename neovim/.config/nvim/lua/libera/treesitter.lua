@@ -4,7 +4,7 @@ M.plugin_spec = {
   "nvim-treesitter/nvim-treesitter",
   config = function()
     require("nvim-treesitter.configs").setup({
-      ensure_installed = { "c", "cpp", "go", "lua", "nix", "python", "rust" },
+      ensure_installed = { "c", "cpp", "go", "haskell", "python", "rust" },
       sync_install = false,
       highlight = {
         enable = true

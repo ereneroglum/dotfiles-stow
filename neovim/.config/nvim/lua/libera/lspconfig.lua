@@ -18,6 +18,7 @@ M.plugin_spec = {
     local lspservers = {
       "clangd",
       "gopls",
+      "hls",
       "pyright",
       "rust_analyzer"
     }
