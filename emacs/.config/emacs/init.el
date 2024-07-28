@@ -50,6 +50,7 @@
 ;; Auto Completion Packages
 (require 'libera-company)
 (require 'libera-helm)
+(require 'libera-which-key)
 
 ;; Theming
 (require 'libera-theme)
