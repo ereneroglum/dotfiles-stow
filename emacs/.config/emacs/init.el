@@ -44,19 +44,27 @@
 ;; Switch to completions buffer (use if helm is not present)
 ; (setq completion-auto-select t)
 
-;; Only one of the following package managers should be enabled
-; (require 'libera-package)
+;; Package management
 (require 'libera-elpaca)
 
+;; Auto Completion Packages
 (require 'libera-company)
 (require 'libera-helm)
-(require 'libera-eglot)
-; (require 'libera-flycheck)
+
+;; Theming
+(require 'libera-theme)
+
+;; Syntax highlighting
 (require 'libera-treesitter)
+
+;; Language modes
 (require 'libera-markdown)
 (require 'libera-rust-mode)
 (require 'libera-go-mode)
-; (require 'libera-web-mode)
-(require 'libera-theme)
+(require 'libera-haskell-mode)
+(require 'libera-web-mode)
+
+;; Language Client
+(require 'libera-eglot)
 
 ;;; init.el ends here

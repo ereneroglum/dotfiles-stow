@@ -24,16 +24,16 @@
 ;;; Code:
 
 ;; Set modes where eglot should start automatically
-
-;; Prefer latest
-;; (use-package eglot
-;;   :ensure t
-;;   :hook
-;;   (prog-mode . eglot-ensure))
-
-;; Prefer bundeled version
-(require 'eglot)
-(add-hook 'prog-mode-hook 'eglot-ensure)
+(use-package eglot
+  :ensure nil
+  :hook
+  (c++-ts-mode . eglot-ensure)
+  (c-or-c++-ts-mode . eglot-ensure)
+  (c-ts-mode . eglot-ensure)
+  (go-ts-mode . eglot-ensure)
+  (haskell-mode . eglot-ensure)
+  (python-ts-mode . eglot-ensure)
+  (rust-ts-mode . eglot-ensure))
 
 (provide 'libera-eglot)
 

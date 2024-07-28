@@ -1,4 +1,4 @@
-;;; libera-flycheck.el --- Libera Emacs flycheck configuration file  -*- lexical-binding: t; -*-
+;;; libera-haskell-mode.el --- Libera Emacs haskell-mode configuration file   -*- lexical-binding: t; -*-
 
 ;; Copyright (c) 2022-2023  Eren Eroğlu <108634315+ereneroglum@users.noreply.github.com>
 ;; URL: https://github.com/ereneroglum
@@ -23,13 +23,10 @@
 
 ;;; Code:
 
-;; Use flycheck for code linting
-(use-package flycheck
-  :ensure t
-  :init
-  ;; We want to enable flycheck globally
-  (global-flycheck-mode 1))
+;; Setup haskell-mode
+(use-package haskell-mode
+  :ensure t)
 
-(provide 'libera-flycheck)
+(provide 'libera-haskell-mode)
 
-;;; libera-flycheck.el ends here
+;;; libera-haskell-mode.el ends here
