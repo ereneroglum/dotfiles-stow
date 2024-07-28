@@ -57,6 +57,7 @@ M.plugin_spec = {
             nvim_lsp = "[LSP]",
             luasnip = "[LuaSnip]",
             nvim_lua = "[Lua]",
+            path = "[Path]",
             treesitter = "[Treesitter]"
           })[entry.source.name]
           vim_item.menu = "    (" .. (vim_item.kind or "") .. ")" .. " " .. source_name
@@ -91,6 +92,7 @@ M.plugin_spec = {
     "L3MON4D3/LuaSnip",
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-nvim-lsp",
+    "hrsh7th/cmp-nvim-lua",
     "hrsh7th/cmp-path",
     "ray-x/cmp-treesitter",
     "saadparwaiz1/cmp_luasnip"
