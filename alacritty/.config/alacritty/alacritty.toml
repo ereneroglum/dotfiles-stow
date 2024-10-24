@@ -1,3 +1,4 @@
+[general]
 import = ["/home/eren/.config/alacritty/colors.toml"]
 
 [font]
