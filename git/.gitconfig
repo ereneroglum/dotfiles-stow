@@ -1,7 +1,10 @@
 [user]
 	name = Eren Eroğlu
-	email = 108634315+ereneroglum@users.noreply.github.com
+	email = eren.eroglu@metu.edu.tr
+	signingkey = 8B6F5CBF82508A1540834926003DFE50E79A49C8
 [init]
 	defaultBranch = master
 [pull]
 	ff = only
+[commit]
+	gpgsign = true
