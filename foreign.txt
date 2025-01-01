@@ -1,4 +1,5 @@
-jellyfin-media-player 1.9.1-2
-prismlauncher 8.2-1
-texlive-full 1:2023.20230703-1
-yuzu 1706-1
+fido2-hid-bridge 0.1.0-1
+jellyfin-media-player-git r1781.2b00125-1
+jetbrains-toolbox 2.3.2.31487-1
+libfido2-full 1.14.0-1
+netbird 0.35.1-1
